@@ -1,0 +1,49 @@
+{
+  "error": null,
+  "metrics": [
+    {
+      "name": "mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 5.846056702019194
+    },
+    {
+      "name": "rmse_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 7.643339791521549
+    },
+    {
+      "name": "macro_ligand_mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 5.862781097710976
+    },
+    {
+      "name": "worst_ligand_mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 14.11692079509323
+    },
+    {
+      "name": "two_state_order_accuracy",
+      "unit": "fraction",
+      "value": 0.9448818897637795
+    },
+    {
+      "name": "ligand_group_count",
+      "unit": "groups",
+      "value": 21.0
+    },
+    {
+      "name": "disjoint_ligand_component_count",
+      "unit": "components",
+      "value": 21.0
+    }
+  ],
+  "primary_metric": {
+    "direction": "minimize",
+    "name": "mae_kcal_mol",
+    "value": 5.846056702019194
+  },
+  "schema_version": "1.0",
+  "status": "valid",
+  "task_id": "tm-unseen-ligand-gap",
+  "valid": true
+}

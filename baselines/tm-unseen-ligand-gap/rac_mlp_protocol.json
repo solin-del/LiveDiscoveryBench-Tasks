@@ -1,0 +1,51 @@
+{
+  "version": "2026-10-01-rac-mlp-v1",
+  "candidates": [
+    {
+      "hidden": [
+        128,
+        64
+      ],
+      "alpha": 0.01
+    },
+    {
+      "hidden": [
+        128,
+        64
+      ],
+      "alpha": 0.1
+    },
+    {
+      "hidden": [
+        256,
+        128
+      ],
+      "alpha": 0.01
+    },
+    {
+      "hidden": [
+        256,
+        128
+      ],
+      "alpha": 0.1
+    }
+  ],
+  "seeds": [
+    61031,
+    61032,
+    61033
+  ],
+  "train_only_standardization": true,
+  "selection": "Minimum ensemble MAE on the 235 development records; test is not consulted during selection.",
+  "model": {
+    "activation": "relu",
+    "solver": "adam",
+    "learning_rate_init": 0.001,
+    "batch_size": 128,
+    "max_iter": 500,
+    "tol": 1e-07,
+    "n_iter_no_change": 40,
+    "early_stopping": false
+  },
+  "scope": "An independently implemented RAC neural baseline on the reduced cross-task-safe split. Not a reproduction of published neural architecture or its 4.00 score."
+}

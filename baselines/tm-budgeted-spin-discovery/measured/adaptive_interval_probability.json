@@ -1,0 +1,39 @@
+{
+  "error": null,
+  "metrics": [
+    {
+      "name": "mean_discoveries",
+      "unit": "candidates",
+      "value": 32.4
+    },
+    {
+      "name": "mean_discovery_curve_average",
+      "unit": "candidates",
+      "value": 17.114
+    },
+    {
+      "name": "mean_first_hit_or_budget_plus_one",
+      "unit": "queries",
+      "value": 4.7
+    },
+    {
+      "name": "mean_discovered_ligand_classes",
+      "unit": "classes",
+      "value": 17.7
+    },
+    {
+      "name": "mean_discovered_metal_oxidation_groups",
+      "unit": "groups",
+      "value": 4.2
+    }
+  ],
+  "primary_metric": {
+    "direction": "maximize",
+    "name": "mean_discoveries",
+    "value": 32.4
+  },
+  "schema_version": "1.0",
+  "status": "valid",
+  "task_id": "tm-budgeted-spin-discovery",
+  "valid": true
+}

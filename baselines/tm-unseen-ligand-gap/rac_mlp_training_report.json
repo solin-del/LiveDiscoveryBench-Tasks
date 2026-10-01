@@ -1,0 +1,70 @@
+{
+  "protocol_sha256": "f2fa08540b320828d13712a2daa223e620f89826e761b78e3068cb3cb0edcc92",
+  "candidates": [
+    {
+      "spec": {
+        "hidden": [
+          128,
+          64
+        ],
+        "alpha": 0.01
+      },
+      "development_mae": 3.565218120426772,
+      "iterations": [
+        500,
+        388,
+        369
+      ]
+    },
+    {
+      "spec": {
+        "hidden": [
+          128,
+          64
+        ],
+        "alpha": 0.1
+      },
+      "development_mae": 3.339420177153231,
+      "iterations": [
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "spec": {
+        "hidden": [
+          256,
+          128
+        ],
+        "alpha": 0.01
+      },
+      "development_mae": 3.5001321996492236,
+      "iterations": [
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "spec": {
+        "hidden": [
+          256,
+          128
+        ],
+        "alpha": 0.1
+      },
+      "development_mae": 3.2095038116386845,
+      "iterations": [
+        500,
+        500,
+        500
+      ]
+    }
+  ],
+  "selected_index": 3,
+  "development_mae": 3.2095038116386845,
+  "test_mae": 5.263004864168261,
+  "paper_neural_reproduction": false,
+  "runtime_verified": false
+}

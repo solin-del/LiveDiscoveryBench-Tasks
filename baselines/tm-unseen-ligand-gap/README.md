@@ -1,0 +1,9 @@
+# Frozen P3 baselines
+
+These independently implemented baselines use the cross-task-safe 956 training / 235 development / 127 final partition. RAC KRR MAE is 5.846056702019194 kcal/mol; development-selected three-seed RAC MLP MAE is 5.263004864168261; training-mean constant MAE is 19.356138664589047. These numbers are full offline Linux scorer measurements, not the paper's 4.00 score on its different training conditions.
+
+`rac_mlp_protocol.json` freezes four configurations, three seeds, train-only standardization and a 500-iteration training cap. Selection uses only development MAE. Runs reached the cap; do not claim converged global optimization. Supplied NPZ assets contain only numeric trained parameters, never third-party pickle. Run `python train_baseline.py --input /path/to/task/input --output /new/output --baseline rac_mlp` (or rac_krr) to retrain using authorized train/development inputs. Final targets are never read by the recipe. The accompanying solution is a persistent JSON-lines server following the task's input/protocol.json.
+
+Python 3.11; numpy 2.3.2, scipy 1.17.1, scikit-learn 1.7.2. One numerical thread. Training recipes may vary slightly across BLAS/platforms; the supplied frozen inference artifacts are the score reference. The Linux checks used a compatible CPU Docker image and a public-API VerifyContext test double outside the task package, not the private operator image/SDK.
+
+Underlying source targets are public and were inspected during construction. This is not an uncontaminated hidden dataset. Molecular ligand grouping is conservative element adjacency plus integer charge, ignoring bond order/stereochemistry refinements; final ligand overlap with training/development is zero. Dataset attribution: Meyer, Chu and Kulik, DOI 10.1088/2632-2153/ad9f22, many_body_ml commit 27467b5d3d85fa42263d746d514461fa009b3c91 (MIT). No original geometry comments, orbital labels or source names enter model inputs.
