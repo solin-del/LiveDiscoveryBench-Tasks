@@ -1,0 +1,13 @@
+{
+  "results": {
+    "geometry_charge": {
+      "mae": 3.0180903363003124
+    },
+    "density_mean_std": {
+      "mae": 2.6460461241067947
+    }
+  },
+  "fixed_mae": 3.163990678933186,
+  "oracle_mae": 0.4183947155527795,
+  "selected_density_view": "density_mean_std"
+}

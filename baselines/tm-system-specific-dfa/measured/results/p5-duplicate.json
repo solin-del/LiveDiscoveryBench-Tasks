@@ -1,0 +1,19 @@
+{
+  "error": "invalid or duplicate sample ID",
+  "metrics": [
+    {
+      "name": "selected_method_mae_kcal_mol",
+      "unit": null,
+      "value": 0.0
+    }
+  ],
+  "primary_metric": {
+    "direction": "minimize",
+    "name": "selected_method_mae_kcal_mol",
+    "value": 0.0
+  },
+  "schema_version": "1.0",
+  "status": "invalid",
+  "task_id": "tm-system-specific-dfa",
+  "valid": false
+}

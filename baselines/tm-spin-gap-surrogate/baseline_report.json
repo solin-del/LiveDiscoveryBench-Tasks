@@ -1,0 +1,181 @@
+{
+  "protocol": {
+    "version": "2026-10-01-p1-geometry-baselines-v1",
+    "input_protocol_sha256": "1824880505d59a0c5c987032706718260f75c60aaf0571c74361cd760f780fa6",
+    "fitting": "Training labels only; standardization fit on training only. Development MAE chooses configurations. Final labels do not select representations or models.",
+    "krr": [
+      {
+        "alpha": 0.001,
+        "gamma": 0.0001
+      },
+      {
+        "alpha": 0.001,
+        "gamma": 0.001
+      },
+      {
+        "alpha": 0.001,
+        "gamma": 0.01
+      },
+      {
+        "alpha": 0.1,
+        "gamma": 0.0001
+      },
+      {
+        "alpha": 0.1,
+        "gamma": 0.001
+      },
+      {
+        "alpha": 0.1,
+        "gamma": 0.01
+      },
+      {
+        "alpha": 1.0,
+        "gamma": 0.0001
+      },
+      {
+        "alpha": 1.0,
+        "gamma": 0.001
+      },
+      {
+        "alpha": 1.0,
+        "gamma": 0.01
+      }
+    ],
+    "trees": [
+      {
+        "leaf": 2,
+        "fraction": 0.5
+      },
+      {
+        "leaf": 2,
+        "fraction": 1.0
+      },
+      {
+        "leaf": 4,
+        "fraction": 0.5
+      },
+      {
+        "leaf": 4,
+        "fraction": 1.0
+      },
+      {
+        "leaf": 8,
+        "fraction": 0.5
+      },
+      {
+        "leaf": 8,
+        "fraction": 1.0
+      }
+    ],
+    "tree_constants": {
+      "n_estimators": 256,
+      "n_jobs": 1,
+      "random_state": 61041
+    },
+    "mlp": [
+      {
+        "hidden": [
+          128,
+          64
+        ],
+        "alpha": 0.01
+      },
+      {
+        "hidden": [
+          128,
+          64
+        ],
+        "alpha": 0.1
+      },
+      {
+        "hidden": [
+          256,
+          128
+        ],
+        "alpha": 0.01
+      },
+      {
+        "hidden": [
+          256,
+          128
+        ],
+        "alpha": 0.1
+      }
+    ],
+    "seeds": [
+      61041,
+      61042,
+      61043
+    ],
+    "mlp_constants": {
+      "activation": "relu",
+      "solver": "adam",
+      "learning_rate_init": 0.001,
+      "batch_size": 128,
+      "max_iter": 500,
+      "tol": 1e-07,
+      "n_iter_no_change": 40,
+      "early_stopping": false
+    }
+  },
+  "counts": {
+    "training": 173,
+    "development": 45,
+    "final": 103
+  },
+  "results": {
+    "krr": {
+      "mae": 9.511549663129207,
+      "rmse": 12.866038341085414,
+      "selected": {
+        "family": "krr",
+        "index": 1,
+        "spec": {
+          "alpha": 0.001,
+          "gamma": 0.001
+        },
+        "development_mae": 7.991817031937034
+      }
+    },
+    "trees": {
+      "mae": 5.077471566282976,
+      "rmse": 7.851814613031727,
+      "selected": {
+        "family": "trees",
+        "index": 1,
+        "spec": {
+          "leaf": 2,
+          "fraction": 1.0
+        },
+        "development_mae": 7.556141943441921
+      }
+    },
+    "mlp": {
+      "mae": 7.793858458391525,
+      "rmse": 10.759458252866015,
+      "selected": {
+        "family": "mlp",
+        "index": 2,
+        "spec": {
+          "hidden": [
+            256,
+            128
+          ],
+          "alpha": 0.01
+        },
+        "development_mae": 7.548646368247669,
+        "training_iterations": [
+          346,
+          500,
+          273
+        ]
+      }
+    },
+    "training_median": {
+      "mae": 15.373565448535391,
+      "value": -33.44683746856504
+    }
+  },
+  "elapsed_seconds": 24.57465560000128,
+  "scope": "Independent information-comparable geometry baselines; not published SLATM/SOAP/MACE/3DMol reproduction. This file records the original fitting measurements. Current no-sign-diagnostic offline Linux inference/scoring measurements are in measured/linux_report.json; the actual operator SDK/image remains unverified."
+}

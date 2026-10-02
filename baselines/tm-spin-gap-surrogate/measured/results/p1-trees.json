@@ -1,0 +1,39 @@
+{
+  "error": null,
+  "metrics": [
+    {
+      "name": "mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 5.077471566282976
+    },
+    {
+      "name": "rmse_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 7.851814613031725
+    },
+    {
+      "name": "macro_parent_mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 5.071978455672987
+    },
+    {
+      "name": "worst_parent_mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 42.2483012297118
+    },
+    {
+      "name": "parent_group_count",
+      "unit": "groups",
+      "value": 101.0
+    }
+  ],
+  "primary_metric": {
+    "direction": "minimize",
+    "name": "mae_kcal_mol",
+    "value": 5.077471566282976
+  },
+  "schema_version": "1.0",
+  "status": "valid",
+  "task_id": "tm-spin-gap-surrogate",
+  "valid": true
+}

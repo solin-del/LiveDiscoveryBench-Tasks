@@ -1,0 +1,44 @@
+{
+  "error": null,
+  "metrics": [
+    {
+      "name": "selected_method_mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 3.0180903363003124
+    },
+    {
+      "name": "oracle_mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 0.4183947155527795
+    },
+    {
+      "name": "mean_regret_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 2.599695620747533
+    },
+    {
+      "name": "macro_formula_mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 3.022267680121651
+    },
+    {
+      "name": "worst_formula_mae_kcal_mol",
+      "unit": "kcal/mol",
+      "value": 22.25210837558734
+    },
+    {
+      "name": "formula_group_count",
+      "unit": "groups",
+      "value": 57.0
+    }
+  ],
+  "primary_metric": {
+    "direction": "minimize",
+    "name": "selected_method_mae_kcal_mol",
+    "value": 3.0180903363003124
+  },
+  "schema_version": "1.0",
+  "status": "valid",
+  "task_id": "tm-system-specific-dfa",
+  "valid": true
+}

@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "training": 173,
+    "development": 45,
+    "final": 103
+  },
+  "sign_distribution": {
+    "training": {
+      "negative": 166,
+      "positive": 7,
+      "zero": 0,
+      "nonfinite": 0
+    },
+    "development": {
+      "negative": 43,
+      "positive": 2,
+      "zero": 0,
+      "nonfinite": 0
+    },
+    "final": {
+      "negative": 103,
+      "positive": 0,
+      "zero": 0,
+      "nonfinite": 0
+    }
+  },
+  "labels_individually_verified": 321,
+  "source_test_positive_labels": 2,
+  "positive_labels_excluded_by_predeclared_formula_rule": 2,
+  "source_identifiers_rows_and_per_record_signs_included": false,
+  "predeclared_exclusion_rule": "Exclude every elemental formula found in the P2/P3 input or trusted test structures, without examining target sign.",
+  "partition_preserved": true,
+  "two_state_order_accuracy_included": false,
+  "conclusion": "Final gaps are all negative, so sign accuracy is non-discriminating. Keep the frozen continuous-gap MAE task and do not select a new split using observed signs."
+}

@@ -1,0 +1,144 @@
+{
+  "actual_linux_isolated_inference": true,
+  "actual_operator_image_verified": false,
+  "baselines": {
+    "density_mean_std": {
+      "error": null,
+      "metrics": [
+        {
+          "name": "selected_method_mae_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 2.6460461241067943
+        },
+        {
+          "name": "oracle_mae_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 0.4183947155527795
+        },
+        {
+          "name": "mean_regret_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 2.227651408554015
+        },
+        {
+          "name": "macro_formula_mae_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 2.640689155077262
+        },
+        {
+          "name": "worst_formula_mae_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 23.53480526120393
+        },
+        {
+          "name": "formula_group_count",
+          "unit": "groups",
+          "value": 57.0
+        }
+      ],
+      "primary_metric": {
+        "direction": "minimize",
+        "name": "selected_method_mae_kcal_mol",
+        "value": 2.6460461241067943
+      },
+      "schema_version": "1.0",
+      "status": "valid",
+      "task_id": "tm-system-specific-dfa",
+      "valid": true
+    },
+    "geometry_charge": {
+      "error": null,
+      "metrics": [
+        {
+          "name": "selected_method_mae_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 3.0180903363003124
+        },
+        {
+          "name": "oracle_mae_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 0.4183947155527795
+        },
+        {
+          "name": "mean_regret_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 2.599695620747533
+        },
+        {
+          "name": "macro_formula_mae_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 3.022267680121651
+        },
+        {
+          "name": "worst_formula_mae_kcal_mol",
+          "unit": "kcal/mol",
+          "value": 22.25210837558734
+        },
+        {
+          "name": "formula_group_count",
+          "unit": "groups",
+          "value": 57.0
+        }
+      ],
+      "primary_metric": {
+        "direction": "minimize",
+        "name": "selected_method_mae_kcal_mol",
+        "value": 3.0180903363003124
+      },
+      "schema_version": "1.0",
+      "status": "valid",
+      "task_id": "tm-system-specific-dfa",
+      "valid": true
+    }
+  },
+  "fixed": {
+    "error": null,
+    "metrics": [
+      {
+        "name": "selected_method_mae_kcal_mol",
+        "unit": "kcal/mol",
+        "value": 3.163990678933186
+      },
+      {
+        "name": "oracle_mae_kcal_mol",
+        "unit": "kcal/mol",
+        "value": 0.4183947155527795
+      },
+      {
+        "name": "mean_regret_kcal_mol",
+        "unit": "kcal/mol",
+        "value": 2.745595963380407
+      },
+      {
+        "name": "macro_formula_mae_kcal_mol",
+        "unit": "kcal/mol",
+        "value": 3.1707276778884346
+      },
+      {
+        "name": "worst_formula_mae_kcal_mol",
+        "unit": "kcal/mol",
+        "value": 14.244462848365629
+      },
+      {
+        "name": "formula_group_count",
+        "unit": "groups",
+        "value": 57.0
+      }
+    ],
+    "primary_metric": {
+      "direction": "minimize",
+      "name": "selected_method_mae_kcal_mol",
+      "value": 3.163990678933186
+    },
+    "schema_version": "1.0",
+    "status": "valid",
+    "task_id": "tm-system-specific-dfa",
+    "valid": true
+  },
+  "invalid_cases": 8,
+  "passed": true,
+  "public_api_context_double": true,
+  "repeat_identical": true,
+  "target_free_boundary_verified": true,
+  "trusted_selection_error_oracle_and_regret_fixture": true
+}

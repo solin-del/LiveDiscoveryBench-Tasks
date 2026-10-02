@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "models": {
+    "trees": {
+      "maximum_absolute_array_difference": 0.0,
+      "numeric_arrays": 6
+    },
+    "krr": {
+      "maximum_absolute_array_difference": 0.0,
+      "numeric_arrays": 5
+    },
+    "mlp": {
+      "maximum_absolute_array_difference": 0.0,
+      "numeric_arrays": 24
+    }
+  },
+  "transformations": {
+    "records": 21,
+    "maximum_absolute_descriptor_difference": 1.5916157281026244e-12,
+    "targets_and_ids_ignored": true,
+    "rigid_transform_and_atom_permutation": true,
+    "fresh_quantum_density_rotation_recomputed": false
+  },
+  "comparison": {
+    "trees": {
+      "final_mae": 5.077471566282976,
+      "improvement_over_median": 10.296093882252414,
+      "paired_formula_bootstrap_95pct": [
+        7.966197311919932,
+        12.551893302365322
+      ]
+    },
+    "krr": {
+      "final_mae": 9.511549663129207,
+      "improvement_over_median": 5.862015785406182,
+      "paired_formula_bootstrap_95pct": [
+        3.35072665932299,
+        8.216965787432073
+      ]
+    },
+    "mlp": {
+      "final_mae": 7.793858458391525,
+      "improvement_over_median": 7.579706990143866,
+      "paired_formula_bootstrap_95pct": [
+        5.306624681736826,
+        9.79618034868987
+      ]
+    }
+  },
+  "reconstructed_from_training_development_only": true,
+  "final_used_only_by_this_scoring_audit": true,
+  "operator_runtime_verified": false
+}

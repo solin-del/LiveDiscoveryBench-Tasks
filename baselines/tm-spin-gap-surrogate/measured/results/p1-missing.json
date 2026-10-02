@@ -1,0 +1,19 @@
+{
+  "error": "missing or extra prediction IDs",
+  "metrics": [
+    {
+      "name": "mae_kcal_mol",
+      "unit": null,
+      "value": 0.0
+    }
+  ],
+  "primary_metric": {
+    "direction": "minimize",
+    "name": "mae_kcal_mol",
+    "value": 0.0
+  },
+  "schema_version": "1.0",
+  "status": "invalid",
+  "task_id": "tm-spin-gap-surrogate",
+  "valid": false
+}

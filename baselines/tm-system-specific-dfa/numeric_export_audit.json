@@ -1,0 +1,34 @@
+{
+  "geometry_charge": {
+    "asset_sha256": "b9e1d167ff94c826e73f6852e34e61cba79e5f55c1b07b36934741e4dfa4cc61",
+    "maximum_train_difference": 0.0,
+    "maximum_final_difference": 0.0,
+    "final_mae": 3.0180903363003124,
+    "feature_dimensions": 77
+  },
+  "density_mean_std": {
+    "asset_sha256": "7138febc0e4c9646735e595b38645cf4670b1905cb43d21c8f073c3f1c5882f0",
+    "maximum_train_difference": 0.0,
+    "maximum_final_difference": 0.0,
+    "final_mae": 2.6460461241067947,
+    "feature_dimensions": 3339
+  },
+  "comparison": {
+    "selected_density_view": "density_mean_std",
+    "held_out_used_for_selection": false,
+    "fixed_method": "m06-l_hfx_30",
+    "fixed_mae": 3.163990678933186,
+    "oracle_mae": 0.4183947155527795,
+    "density_vs_fixed_improvement": 0.5179445548263917,
+    "density_vs_fixed_95pct": [
+      -0.39499370465289063,
+      1.5075909866516564
+    ],
+    "density_vs_geometry_improvement": 0.3720442121935179,
+    "density_vs_geometry_95pct": [
+      -0.18792933564899042,
+      1.0597694115765188
+    ],
+    "superiority_established": false
+  }
+}

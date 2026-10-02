@@ -1,0 +1,119 @@
+{
+  "version": "2026-10-01-p1-geometry-baselines-v1",
+  "input_protocol_sha256": "1824880505d59a0c5c987032706718260f75c60aaf0571c74361cd760f780fa6",
+  "fitting": "Training labels only; standardization fit on training only. Development MAE chooses configurations. Final labels do not select representations or models.",
+  "krr": [
+    {
+      "alpha": 0.001,
+      "gamma": 0.0001
+    },
+    {
+      "alpha": 0.001,
+      "gamma": 0.001
+    },
+    {
+      "alpha": 0.001,
+      "gamma": 0.01
+    },
+    {
+      "alpha": 0.1,
+      "gamma": 0.0001
+    },
+    {
+      "alpha": 0.1,
+      "gamma": 0.001
+    },
+    {
+      "alpha": 0.1,
+      "gamma": 0.01
+    },
+    {
+      "alpha": 1.0,
+      "gamma": 0.0001
+    },
+    {
+      "alpha": 1.0,
+      "gamma": 0.001
+    },
+    {
+      "alpha": 1.0,
+      "gamma": 0.01
+    }
+  ],
+  "trees": [
+    {
+      "leaf": 2,
+      "fraction": 0.5
+    },
+    {
+      "leaf": 2,
+      "fraction": 1.0
+    },
+    {
+      "leaf": 4,
+      "fraction": 0.5
+    },
+    {
+      "leaf": 4,
+      "fraction": 1.0
+    },
+    {
+      "leaf": 8,
+      "fraction": 0.5
+    },
+    {
+      "leaf": 8,
+      "fraction": 1.0
+    }
+  ],
+  "tree_constants": {
+    "n_estimators": 256,
+    "n_jobs": 1,
+    "random_state": 61041
+  },
+  "mlp": [
+    {
+      "hidden": [
+        128,
+        64
+      ],
+      "alpha": 0.01
+    },
+    {
+      "hidden": [
+        128,
+        64
+      ],
+      "alpha": 0.1
+    },
+    {
+      "hidden": [
+        256,
+        128
+      ],
+      "alpha": 0.01
+    },
+    {
+      "hidden": [
+        256,
+        128
+      ],
+      "alpha": 0.1
+    }
+  ],
+  "seeds": [
+    61041,
+    61042,
+    61043
+  ],
+  "mlp_constants": {
+    "activation": "relu",
+    "solver": "adam",
+    "learning_rate_init": 0.001,
+    "batch_size": 128,
+    "max_iter": 500,
+    "tol": 1e-07,
+    "n_iter_no_change": 40,
+    "early_stopping": false
+  }
+}

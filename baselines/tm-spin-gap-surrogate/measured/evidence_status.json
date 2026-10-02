@@ -1,0 +1,9 @@
+{
+  "latest_candidate_linux_gate_passed": true,
+  "actual_operator_sdk_image_verified": false,
+  "public_api_context_double": true,
+  "reference_anchor": 7.793858458391523,
+  "bottom_anchor": 15.373565448535388,
+  "baselines_publicly_released": false,
+  "local_content_complete": true
+}

@@ -1,0 +1,245 @@
+{
+  "candidates": [
+    {
+      "family": "krr",
+      "index": 0,
+      "spec": {
+        "alpha": 0.001,
+        "gamma": 0.0001
+      },
+      "development_mae": 8.957542151731372
+    },
+    {
+      "family": "krr",
+      "index": 1,
+      "spec": {
+        "alpha": 0.001,
+        "gamma": 0.001
+      },
+      "development_mae": 7.991817031937034
+    },
+    {
+      "family": "krr",
+      "index": 2,
+      "spec": {
+        "alpha": 0.001,
+        "gamma": 0.01
+      },
+      "development_mae": 9.1723416955477
+    },
+    {
+      "family": "krr",
+      "index": 3,
+      "spec": {
+        "alpha": 0.1,
+        "gamma": 0.0001
+      },
+      "development_mae": 9.469909318541356
+    },
+    {
+      "family": "krr",
+      "index": 4,
+      "spec": {
+        "alpha": 0.1,
+        "gamma": 0.001
+      },
+      "development_mae": 8.061436613041653
+    },
+    {
+      "family": "krr",
+      "index": 5,
+      "spec": {
+        "alpha": 0.1,
+        "gamma": 0.01
+      },
+      "development_mae": 9.152721719297492
+    },
+    {
+      "family": "krr",
+      "index": 6,
+      "spec": {
+        "alpha": 1.0,
+        "gamma": 0.0001
+      },
+      "development_mae": 14.76496295881539
+    },
+    {
+      "family": "krr",
+      "index": 7,
+      "spec": {
+        "alpha": 1.0,
+        "gamma": 0.001
+      },
+      "development_mae": 10.016875533454654
+    },
+    {
+      "family": "krr",
+      "index": 8,
+      "spec": {
+        "alpha": 1.0,
+        "gamma": 0.01
+      },
+      "development_mae": 10.290509389903614
+    },
+    {
+      "family": "trees",
+      "index": 0,
+      "spec": {
+        "leaf": 2,
+        "fraction": 0.5
+      },
+      "development_mae": 8.078317026551701
+    },
+    {
+      "family": "trees",
+      "index": 1,
+      "spec": {
+        "leaf": 2,
+        "fraction": 1.0
+      },
+      "development_mae": 7.556141943441921
+    },
+    {
+      "family": "trees",
+      "index": 2,
+      "spec": {
+        "leaf": 4,
+        "fraction": 0.5
+      },
+      "development_mae": 8.626413444078477
+    },
+    {
+      "family": "trees",
+      "index": 3,
+      "spec": {
+        "leaf": 4,
+        "fraction": 1.0
+      },
+      "development_mae": 8.541714416387476
+    },
+    {
+      "family": "trees",
+      "index": 4,
+      "spec": {
+        "leaf": 8,
+        "fraction": 0.5
+      },
+      "development_mae": 8.760986014808113
+    },
+    {
+      "family": "trees",
+      "index": 5,
+      "spec": {
+        "leaf": 8,
+        "fraction": 1.0
+      },
+      "development_mae": 8.61141609290413
+    },
+    {
+      "family": "mlp",
+      "index": 0,
+      "spec": {
+        "hidden": [
+          128,
+          64
+        ],
+        "alpha": 0.01
+      },
+      "development_mae": 7.568733726060581,
+      "training_iterations": [
+        408,
+        353,
+        500
+      ]
+    },
+    {
+      "family": "mlp",
+      "index": 1,
+      "spec": {
+        "hidden": [
+          128,
+          64
+        ],
+        "alpha": 0.1
+      },
+      "development_mae": 7.726041120191447,
+      "training_iterations": [
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "family": "mlp",
+      "index": 2,
+      "spec": {
+        "hidden": [
+          256,
+          128
+        ],
+        "alpha": 0.01
+      },
+      "development_mae": 7.548646368247669,
+      "training_iterations": [
+        346,
+        500,
+        273
+      ]
+    },
+    {
+      "family": "mlp",
+      "index": 3,
+      "spec": {
+        "hidden": [
+          256,
+          128
+        ],
+        "alpha": 0.1
+      },
+      "development_mae": 7.727784784159042,
+      "training_iterations": [
+        500,
+        500,
+        500
+      ]
+    }
+  ],
+  "selected": {
+    "krr": {
+      "family": "krr",
+      "index": 1,
+      "spec": {
+        "alpha": 0.001,
+        "gamma": 0.001
+      },
+      "development_mae": 7.991817031937034
+    },
+    "trees": {
+      "family": "trees",
+      "index": 1,
+      "spec": {
+        "leaf": 2,
+        "fraction": 1.0
+      },
+      "development_mae": 7.556141943441921
+    },
+    "mlp": {
+      "family": "mlp",
+      "index": 2,
+      "spec": {
+        "hidden": [
+          256,
+          128
+        ],
+        "alpha": 0.01
+      },
+      "development_mae": 7.548646368247669,
+      "training_iterations": [
+        346,
+        500,
+        273
+      ]
+    }
+  },
+  "selection_complete_before_final_labels_opened": true
+}

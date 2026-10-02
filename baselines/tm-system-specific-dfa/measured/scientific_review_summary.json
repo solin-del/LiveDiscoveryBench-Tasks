@@ -1,0 +1,104 @@
+{
+  "review_date": "2026-10-02",
+  "original_181_recipe_recovered": false,
+  "source_archive": {
+    "doi": "10.5281/zenodo.17468690",
+    "version": "v1",
+    "sha256": "bfd43e3fbd5db3611d28f5a7bc3f59894fcbe8a1fabfecebf83f3a603463081f",
+    "license": "CC BY 4.0",
+    "density_commit": "7bd4e453513449be1e34c064e61a601528ba4bc9"
+  },
+  "source_filter_audit": {
+    "method": "Read archive CSV and notebook cells as inert data. No source notebook/script/model was executed.",
+    "raw_finite_pbe_hfx25_HS_LS_pairs": 401,
+    "cleaned_finite_pbe_hfx25_pairs": 382,
+    "raw_finite_pairs_removed_by_curve_cleaning": 19,
+    "archived_pbe0_vss_density_records": 348,
+    "density_records_not_in_cleaned_pbe25": 0,
+    "cleaned_pbe25_records_without_density": 34,
+    "curve_rule": "Iteratively remove a point if its omission changes the interpolating VSSE-versus-HFX spline by more than 5 kcal/mol over the sampled interval.",
+    "candidate_eligibility": "Source convergence and spin-contamination screening, HFX-curve cleaning, density availability, complete finite reference/all45 values, and cross-task formula exclusion.",
+    "inference_limit": "Source preselection is retained. It is not this recommender selecting records by its final prediction error, and it does not establish an unbiased chemical cohort."
+  },
+  "state_definition": {
+    "direct_primary_source": "https://arxiv.org/pdf/2207.10747",
+    "section": "Methods / Data set construction, PDF page 22 (zero-based page 21)",
+    "formal_d_count_pairs": {
+      "3": [
+        2,
+        4
+      ],
+      "4": [
+        1,
+        5
+      ],
+      "5": [
+        2,
+        6
+      ],
+      "6": [
+        1,
+        5
+      ],
+      "7": [
+        2,
+        4
+      ]
+    },
+    "source_high_spin_and_electron_parity_checked": true,
+    "target_sign_used": false,
+    "limitation": "The d4 singlet/quintet comparison is the source archive convention, not a universal lowest-spin octahedral d4 rule. Other spin-state ordering is not certified."
+  },
+  "mapping_evidence": {
+    "all_VSS": "Same-named structures.csv/XYZ association, atom count, source network-group-code sequence and zero padding checked.",
+    "not_independently_verified": [
+      "Actual-element atom order within source shared groups",
+      "Permutations among same-element atoms",
+      "Every original wavefunction coordinate"
+    ],
+    "local_CSD_diagnostic_not_redistributed_or_extrapolated": true
+  },
+  "numerical_independent_check": {
+    "test_count": 58,
+    "computation": "In-memory pure numeric exported inference and trusted CSV-column absolute-error scoring. No fitting or selection was performed.",
+    "geometry_charge": {
+      "dimensions": 77,
+      "mae_kcal_mol": 3.0180903363003124,
+      "predictions_finite": true
+    },
+    "density_mean_std": {
+      "dimensions": 3339,
+      "mae_kcal_mol": 2.6460461241067947,
+      "predictions_finite": true
+    },
+    "model_configuration_basis": "117-row formula-group training CV, frozen before this v2 final scoring",
+    "selected_density_cv_mae_kcal_mol": 4.058016814377394,
+    "alternative_density_mean_cv_mae_kcal_mol": 4.180850042439944,
+    "current_candidate_reported_intervals": {
+      "source": "candidate/numeric_export_audit.json",
+      "group_keys": "opaque formula group_id sorted lexicographically",
+      "iterations": 2000,
+      "seed": 20260930,
+      "density_vs_fixed_95pct_kcal_mol": [
+        -0.39499370465289063,
+        1.5075909866516564
+      ],
+      "density_vs_geometry_95pct_kcal_mol": [
+        -0.18792933564899042,
+        1.0597694115765188
+      ],
+      "independently_recomputed_in_this_review": false,
+      "superiority_established": false,
+      "history_note": "The earlier report.json used source formula strings for sorted cluster keys. The seeded finite resampling sequence changes when group keys change, giving different endpoints; both reported intervals cross zero."
+    }
+  },
+  "remaining_limits": [
+    "No full source SCF/wavefunction/density-fitting rerun",
+    "Approximate DLPNO-CCSD(T0), incomplete detailed PNO/grid/custom-exchange recipes",
+    "Preparation uses two PBE0 spin-state SCFs plus prior geometry optimization; end-to-end costs and saving are unmeasured",
+    "Small conditional cohort and intervals crossing zero",
+    "Public target contamination and P1/P5 related final records",
+    "Immutable public baseline/reconstruction links and actual operator SDK/image/isolation capability remain pending"
+  ],
+  "source_identity_maps_and_CSD_example_files_included": false
+}

@@ -1,0 +1,34 @@
+{
+  "density_view": "density_mean_std",
+  "selections": {
+    "geometry_charge": {
+      "spec": {
+        "kind": "extra_trees",
+        "min_samples_leaf": 8,
+        "max_features": 0.5
+      },
+      "target": "absolute_error",
+      "oof_selected_method_mae": 4.699279114116817
+    },
+    "density_mean": {
+      "spec": {
+        "kind": "extra_trees",
+        "min_samples_leaf": 1,
+        "max_features": 0.5
+      },
+      "target": "absolute_error",
+      "oof_selected_method_mae": 4.180850042439944
+    },
+    "density_mean_std": {
+      "spec": {
+        "kind": "extra_trees",
+        "min_samples_leaf": 1,
+        "max_features": 0.5
+      },
+      "target": "absolute_error",
+      "oof_selected_method_mae": 4.058016814377394
+    }
+  },
+  "held_out_used_for_selection": false,
+  "training_sha256": "efcea64516be01033e53aa1f92fafe0c18d141e0324bafaab69d6d307b7004e5"
+}

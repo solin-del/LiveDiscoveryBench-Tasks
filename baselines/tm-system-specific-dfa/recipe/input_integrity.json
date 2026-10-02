@@ -1,0 +1,11 @@
+{
+  "normalization": "UTF-8 input bytes, CRLF replaced by LF; all other bytes remain fixed",
+  "inputs": {
+    "training": {
+      "original_sha256": "5695df09ece3ca446a482ce30beb643c8700eca2f5fd71b161b2e9d71b04e6a7",
+      "canonical_lf_sha256": "efcea64516be01033e53aa1f92fafe0c18d141e0324bafaab69d6d307b7004e5"
+    }
+  },
+  "parsed_data_and_model_arrays_changed": false,
+  "final_data_required": false
+}

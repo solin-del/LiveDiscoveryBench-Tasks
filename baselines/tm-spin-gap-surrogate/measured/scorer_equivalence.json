@@ -1,0 +1,27 @@
+{
+  "candidate_only": true,
+  "retained_metric_checks": {
+    "trees": {
+      "mae_kcal_mol": 5.077471566282976,
+      "all_retained_metrics_exactly_unchanged": true,
+      "removed_diagnostic": "two_state_order_accuracy"
+    },
+    "krr": {
+      "mae_kcal_mol": 9.511549663129207,
+      "all_retained_metrics_exactly_unchanged": true,
+      "removed_diagnostic": "two_state_order_accuracy"
+    },
+    "mlp": {
+      "mae_kcal_mol": 7.793858458391524,
+      "all_retained_metrics_exactly_unchanged": true,
+      "removed_diagnostic": "two_state_order_accuracy"
+    },
+    "training_median": {
+      "mae_kcal_mol": 15.373565448535388,
+      "all_retained_metrics_exactly_unchanged": true,
+      "removed_diagnostic": "two_state_order_accuracy"
+    }
+  },
+  "verification": "Existing frozen predictions passed through old/new Python scorer with a response/context double; no model refit. Parent separately runs Linux compatibility checks.",
+  "actual_operator_image_verified": false
+}

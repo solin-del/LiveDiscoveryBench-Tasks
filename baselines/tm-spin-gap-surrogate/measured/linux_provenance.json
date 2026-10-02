@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "queue_id": "112",
+  "artifact_collection_id": "112a",
+  "archive_sha256": "602ec3a2604b1a750276d7894f32cf703f5db844ffdecead7dd2d35aa37a51c0",
+  "archive_bytes": 3695263,
+  "manifest_checksum_exact_match": true,
+  "archive_scorer_matches_current_candidate": true,
+  "archive_scorer_matches_staged_git_blob_after_lf_normalization": true,
+  "scorer_sha256_lf": "38d05ec123c471e2504bbb50a9a07d2423c76b18620bb0f8c8104320b9229649",
+  "archived_test_code_sha256": "2114320d1330701ac5b31463f51e5b6effc608fb624ce7af2403a04a4b4a8ea2",
+  "removed_diagnostic_asserted_in_actual_linux_results": true,
+  "final_invalid_cases": 6,
+  "boundary_verified": true,
+  "repeat_identical": true,
+  "actual_operator_sdk_image_verified": false
+}

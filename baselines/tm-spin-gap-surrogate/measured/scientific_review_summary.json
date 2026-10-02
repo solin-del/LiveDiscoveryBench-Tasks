@@ -1,0 +1,61 @@
+{
+  "review_date": "2026-10-02",
+  "sources": [
+    {
+      "name": "Duan et al. source Methods",
+      "doi": "10.1038/s43588-022-00384-0",
+      "url": "https://arxiv.org/pdf/2207.10747",
+      "sections": "Methods pp.21-23: Data set construction; DFT geometry optimization; Single-point energy calculation",
+      "verified": "Source-defined comparison pairs, molSimplify VSS assembly, HS-only geometry optimization and single-point formalism."
+    },
+    {
+      "name": "A Transferable Recommender Approach for Selecting the Best Density Functional Approximations in Chemical Discovery",
+      "url": "https://zenodo.org/records/7350958",
+      "metadata_api": "https://zenodo.org/api/records/7350958",
+      "version": "2",
+      "license": "cc-by-4.0",
+      "doi": "10.5281/zenodo.7350958",
+      "creators": [
+        "Chenru Duan",
+        "Aditya Nandy",
+        "Ralf Meyer",
+        "Naveen Arunachalam",
+        "Heather J. Kulik"
+      ],
+      "archive_bytes": 157006510,
+      "source_checksum": "md5:767458b11f89abaa7744f6af45c99b0f",
+      "archive_sha256": "ab6587bfdb7c041d5262521f3c32fac96f94d2693f9afae311297b253081f7db",
+      "description_scope": "Optimized XYZ structures and DFA/DLPNO reference energies.",
+      "metadata_read_successfully": true
+    }
+  ],
+  "comparison_state_scope": "Duan source Methods, d3/d7=(2,4), d4/d6=(1,5), d5=(2,6). The restricted d4 singlet is a source comparison convention, not a universal lowest-spin rule.",
+  "records_with_individually_verified_states": 321,
+  "independent_audits": {
+    "archived_vs_github_VSS_geometry_files": 452,
+    "all_geometry_files_byte_identical": true,
+    "exported_targets_exactly_match_archive": true,
+    "split_formula_intersections": {
+      "training-development": 0,
+      "training-final": 0,
+      "development-final": 0
+    },
+    "P2_P3_formula_count": 1100,
+    "P2_P3_records_read": 2117,
+    "cross_task_formula_intersections": {
+      "training": 0,
+      "development": 0,
+      "final": 0
+    },
+    "CSD_coordinates_used": false
+  },
+  "baseline_selection_caveat": "Each family is development-selected independently. MLP development MAE 7.548646368247669 is slightly below trees 7.556141943441921; the lower tree final MAE does not make trees the development-selected overall winner.",
+  "scientific_conclusion": "The fixed archived B3LYP continuous vertical-gap regression is coherent. This is not experimental/CC accuracy, a ground-state certification, or an uncontaminated hidden holdout. The source/protocol change must be disclosed to reviewers; old CSD rights remain unresolved.",
+  "resolved_findings": [
+    "Removed non-discriminating sign-order diagnostic only in generated VSS candidate.",
+    "Documented source-defined state pairs and explicit d4 singlet comparison scope.",
+    "Documented restricted/unrestricted source formalism and same-source Methods citation.",
+    "Recorded label-sign distribution and target-independent positive-record exclusions."
+  ],
+  "per_record_state_or_source_identity_map_included": false
+}
