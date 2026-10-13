@@ -1,7 +1,15 @@
-# Frozen P2 baselines
+# Budgeted spin-discovery baselines
 
-Three persistent JSON-lines strategies are provided. Full offline Linux replay over ten fixed initial conditions yields mean discoveries: uniform_random 13.2, static_abs_mean 26.8, adaptive_interval_probability 32.4. Every condition uses 50 initial labels and 100 unique new queries; initial labels never count. Near-degeneracy is strictly abs(adiabatic signed gap)<5 kcal/mol, not experimental spin crossover.
+Three JSON-lines strategies provide reference scores for the 419-candidate final pool. Each of ten conditions supplies 50 initial labels and permits 100 unique new queries.
 
-The 419-candidate final pool is disjoint from the 190-candidate development pool and from P3 parent records. Ten seeds repeat initial conditions on one candidate dataset; they are not ten independent datasets. The adaptive model refits every ten new labels. ExtraTreesRegressor: 128 trees, minimum leaf 2, all features, seed supplied by the trusted initializer, n_jobs=1. Tree spread is an acquisition heuristic, not calibrated uncertainty. Source targets are public and were inspected during construction; no immunity to memorization is claimed.
+| Strategy | Mean discoveries |
+| --- | ---: |
+| Uniform random | 13.2 |
+| Static absolute-mean ranking | 26.8 |
+| Adaptive interval probability | 32.4 |
 
-No pretraining/model files are required: each strategy fits only its current condition's authorized 50 initial labels and feedback. It cannot retain labels between fresh scoring processes. Submit the directory containing solution/; do not submit measurement JSON or this README. Python 3.11; numpy 2.3.2, scipy 1.17.1, scikit-learn 1.7.2. The checks used a compatible offline CPU Docker image and a public-API VerifyContext double, not the actual operator SDK/image. Source attribution: Meyer, Chu and Kulik, DOI 10.1088/2632-2153/ad9f22, many_body_ml commit 27467b5d3d85fa42263d746d514461fa009b3c91 (MIT).
+The two model strategies fit ExtraTreesRegressor with 128 trees, minimum leaf size 2, all features, the supplied seed and one numerical thread. The adaptive strategy refits every ten new labels. Tree spread supplies an acquisition heuristic, without an uncertainty calibration claim. Strategies fit only their condition's initial labels and authorized feedback; each condition starts in a fresh process.
+
+Submit the selected directory containing solution/. Python 3.11, numpy 2.3.2, scipy 1.17.1 and scikit-learn 1.7.2 were used for the recorded offline Linux runs. Those runs used a compatible CPU Docker image and a public-API VerifyContext test double. Integration with the operator's actual SDK and image remains unverified.
+
+Discoveries satisfy abs(adiabatic signed gap)<5 kcal/mol. This is a reference-DFT screen, with ten initial conditions on one dataset. Development and final pools contain 190 and 419 candidates and have no shared parents with P3. Source targets are public and were inspected during construction. Meyer, Chu and Kulik, DOI 10.1088/2632-2153/ad9f22; many_body_ml commit 27467b5d3d85fa42263d746d514461fa009b3c91. See NOTICE.txt for the MIT license and attribution.
