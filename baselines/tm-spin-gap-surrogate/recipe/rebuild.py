@@ -1,7 +1,7 @@
-"""Rebuild frozen P1 baselines from the agent-visible training/development JSON.
+"""Rebuild frozen geometry baselines from training and development JSON.
 
-This module has no construction-directory import and never opens final data.
-It is copied, with the two numeric modules, into the local recipe candidate.
+The recipe fits the documented configurations using training labels and
+reports development MAE. It reads no final records or labels.
 """
 import argparse
 import hashlib

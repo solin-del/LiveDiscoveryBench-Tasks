@@ -22,6 +22,6 @@
       "removed_diagnostic": "two_state_order_accuracy"
     }
   },
-  "verification": "Existing frozen predictions passed through old/new Python scorer with a response/context double; no model refit. Parent separately runs Linux compatibility checks.",
+  "verification": "Frozen predictions replayed through the original and revised Python scorers using response/context test doubles; no model refit. Offline Linux measurements are recorded separately in linux_report.json.",
   "actual_operator_image_verified": false
 }
